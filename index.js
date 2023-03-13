@@ -4,8 +4,8 @@ const cron = require('node-cron');
 
 const cronJob = async () => {
   const browser = await puppeteer.launch({
-    headless: false,
-    executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+    // headless: false,
+    // executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
   });
   const page = await browser.newPage();
   await page.goto(url)
